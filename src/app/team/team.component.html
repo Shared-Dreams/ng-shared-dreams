@@ -1,0 +1,26 @@
+<section class="py-5">
+  <div class="container">
+    <h2 class="font-weight-light">Team</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
+
+    <div class="row member" *ngFor="let member of members">
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img class="card-img" [src]="member.url" [alt]="member.name" >
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ member.name }}</h5>
+              <p class="card-text">Role</p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum veritatis quod ad saepe, officia accusantium, unde nulla vitae commodi quia consequatur ipsam natus impedit repellendus sunt. Sequi totam soluta ex.</p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cupiditate rem voluptatum, dicta rerum odit corrupti animi in. Dolore, optio? Magnam molestias totam quis, facilis neque voluptatibus nostrum? Ducimus, recusandae!</p>
+              <p class="card-text"><small class="text-muted">Last updated x mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
