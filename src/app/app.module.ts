@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './shared/components/toolbar/toolbar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
