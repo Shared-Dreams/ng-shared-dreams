@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ContentfulService } from '../shared/services/contentful.service';
+import { Entry } from 'contentful';
 
 @Component({
   selector: 'app-team',
@@ -6,24 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./team.component.scss']
 })
 export class TeamComponent implements OnInit {
-  members = [
-    {
-      name: 'Juana Estrada',
-      url: '/assets/imgs/juana.webp',
-    },
-    {
-      name: 'Melisa Araujo',
-      url: '/assets/imgs/melisa.webp',
-    },
-    {
-      name: 'Manuela Montoya',
-      url: '/assets/imgs/manuela.webp',
-    }
-  ];
+  private members: Entry<any>[] = [];
 
-  constructor() { }
+  constructor(
+    private contentfulService: ContentfulService
+  ) { }
 
   ngOnInit(): void {
+    this.contentfulService.getMembers()
+      .then(members => this.members = members);
   }
 
 }

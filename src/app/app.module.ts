@@ -10,6 +10,9 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { TeamComponent } from './team/team.component';
 
+/* Services */
+import { ContentfulService } from './shared/services/contentful.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +25,9 @@ import { TeamComponent } from './team/team.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ContentfulService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,18 +9,13 @@
       <div class="card mb-3 text-white" *ngFor="let member of members">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <img class="card-img" [src]="member.url" [alt]="member.name">
+            <img class="card-img" [src]="member.fields.photoUrl" [alt]="member.fields.name">
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">{{ member.name }}</h5>
-              <p class="card-text">Role</p>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum veritatis quod ad
-                saepe, officia accusantium, unde nulla vitae commodi quia consequatur ipsam natus impedit repellendus
-                sunt. Sequi totam soluta ex.</p>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cupiditate rem
-                voluptatum, dicta rerum odit corrupti animi in. Dolore, optio? Magnam molestias totam quis, facilis
-                neque voluptatibus nostrum? Ducimus, recusandae!</p>
+              <h5 class="card-title">{{ member.fields.name }} {{ member.fields.lastname }}</h5>
+              <p class="card-text">{{ member.fields.role }}</p>
+              <p class="card-text">{{ member.fields.bio }}</p>
               <p class="card-text"><small class="text-muted">Last updated x mins ago</small></p>
             </div>
           </div>
