@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ng-shared-dreams"
+    }
+  },
+  "defaultProject": "ng-shared-dreams",
+  "cli": {
+    "analytics": "6eefdb8c-002c-4e2d-9b2c-15fcf1bb477f"
+  }
 }
