@@ -1,0 +1,15 @@
+footer {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+  p {
+    width: 100%;
+    text-align: center;
+  }
+  a {
+    outline: 1px solid blue;
+    display: flex;
+    align-items: center;
+  }
+}

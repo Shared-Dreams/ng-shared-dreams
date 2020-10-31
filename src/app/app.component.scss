@@ -57,16 +57,16 @@ p {
   }
 }
 
-a,
-a:visited,
-a:hover {
-  color: #1976d2;
-  text-decoration: none;
-}
+// a,
+// a:visited,
+// a:hover {
+//   color: #1976d2;
+//   text-decoration: none;
+// }
 
-a:hover {
-  color: #125699;
-}
+// a:hover {
+//   color: #125699;
+// }
 
 .terminal {
   position: relative;
@@ -101,17 +101,7 @@ a:hover {
   margin: 0;
 }
 
-footer {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  line-height: 20px;
-}
 
-footer a {
-  display: flex;
-  align-items: center;
-}
 
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
